@@ -180,8 +180,11 @@ select {
 }
 
 /*  ABOUT  */
-.about, .services{
+.about, .skills{
     background: white;
+}
+
+.about, .services, .skills{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -190,7 +193,8 @@ select {
 }
 
 .about .about-content,
-.services .serv-content{
+.services .serv-content,
+.skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -296,6 +300,97 @@ select {
     margin: 10px 0 7px 0;
 }
 
+/*  SKILLS  */
+.skills .title::after{
+    content: "what i know";
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left p{
+    text-align: justify;
+}
+
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.5s ease;
+}
+
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content : "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: crimson;
+}
+
+.skills-content .right .html::before{
+    width: 90%;
+}
+
+.skills-content .right .css::before{
+    width: 60%;
+}
+
+.skills-content .right .js::before{
+    width: 80%;
+}
+
+.skills-content .right .java::before{
+    width: 50%;
+}
+
+.skills-content .right .sql::before{
+    width: 90%;
+}
+
+
+
 
 /*responsive media query start*/
 @media (max-width: 1300px) {
@@ -379,6 +474,11 @@ select {
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
+    }
+
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
     }
 }
 
