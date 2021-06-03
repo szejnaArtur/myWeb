@@ -46,7 +46,7 @@
 
 <section class="about" id="about">
     <div class="max-width">
-        <h2 class="title">Amout me</h2>
+        <h2 class="title">About me</h2>
         <div class="about-content">
             <div class="column left">
                 <img th:src="@{/images/xxx.jpg}" alt="">
@@ -177,6 +177,63 @@
                     <div class="text">Someone name</div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get in Touch</div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scram</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Artur Szejna</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Adress</div>
+                            <div class="sub-title">Wincentego Pola, Rzeszów</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">abc@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Message me</div>
+                <form action="#">
+                    <div class="field">
+                        <div class="field name">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="Describe project..."></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Sent message</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
