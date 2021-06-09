@@ -25,12 +25,12 @@
             <a href="#">Portfo<span>lio.</span></a>
         </div>
         <ul class="menu">
-            <li><a href="#home" class="menu-btn">Home</a></li>
-            <li><a href="#about" class="menu-btn">About</a></li>
-            <li><a href="#services" class="menu-btn">Services</a></li>
-            <li><a href="#skills" class="menu-btn">Skills</a></li>
-            <li><a href="#teams" class="menu-btn">Teams</a></li>
-            <li><a href="#contact" class="menu-btn">Contact</a></li>
+            <li><a href="#home" class="menu-btn">Start</a></li>
+            <li><a href="#about" class="menu-btn">O mnie</a></li>
+            <li><a href="#services" class="menu-btn">Usługi</a></li>
+            <li><a href="#skills" class="menu-btn">Doświadczenie</a></li>
+            <li><a href="#projects" class="menu-btn">Projekty</a></li>
+            <li><a href="#contact" class="menu-btn">Kontakt</a></li>
         </ul>
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -41,30 +41,31 @@
 <section class="home" id="home">
     <div class="max-width">
         <div class="home-content">
-            <div class="text-1">Hello, my name is</div>
+            <div class="text-1">Cześć, jestem</div>
             <div class="text-2">Artur Szejna</div>
-            <div class="text-3">And I'm a <span class="typing"></span></div>
-            <a href="#">Hire me</a>
+            <div class="text-3">I jestem <span class="typing"></span></div>
+            <a href="#contact">Zatrudnij mnie</a>
         </div>
     </div>
 </section>
 
 <section class="about" id="about">
     <div class="max-width">
-        <h2 class="title">About me</h2>
+        <h2 class="title">O mnie</h2>
         <div class="about-content">
             <div class="column left">
-                <img th:src="@{/images/xxx.jpg}" alt="">
+                <img th:src="@{/images/profil.jpg}" alt="">
             </div>
             <div class="column right">
-                <div class="text">I'm Artur and I'm a <span>Junior Java Developer</span></div>
+                <div class="text">Jestem Artur i jestem <span>Junior Java Developerem</span></div>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                     leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
                     with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <a href="#">Download CV</a>
+                <a th:href="@{/download/artur_szejna_ENG.pdf}" download="artur_szejna_ENG.pdf">Download CV - PL</a>
+                <a href="#">Download CV - ENG</a>
             </div>
         </div>
     </div>
@@ -114,13 +115,20 @@
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scram</p>
-                <a href="#">Read more</a>
+                <a href="https://pl.linkedin.com/in/artur-szejna-30b7b419a" target="_blank">Read more</a>
             </div>
             <div class="column right">
                 <div class="bars">
                     <div class="info">
-                        <span>HTML</span>
+                        <span>Java</span>
                         <span>90%</span>
+                    </div>
+                    <div class="line java"></div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>HTML</span>
+                        <span>75%</span>
                     </div>
                     <div class="line html"></div>
                 </div>
@@ -134,65 +142,58 @@
                 <div class="bars">
                     <div class="info">
                         <span>JavaScript</span>
-                        <span>80%</span>
+                        <span>50%</span>
                     </div>
                     <div class="line js"></div>
                 </div>
                 <div class="bars">
                     <div class="info">
                         <span>MySQL</span>
-                        <span>50%</span>
+                        <span>75%</span>
                     </div>
                     <div class="line sql"></div>
-                </div>
-                <div class="bars">
-                    <div class="info">
-                        <span>Java</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="line java"></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="teams" id="teams">
+<section class="projects" id="projects">
     <div class="max-width">
-        <h2 class="title">My temas</h2>
+        <h2 class="title">My projects</h2>
         <div class="carousel owl-carousel">
             <div class="card">
                 <div class="box">
-                    <img th:src="@{/images/xxx.jpg}" alt="">
-                    <div class="text">Someone name</div>
+                    <img th:src="@{/images/ICD10.PNG}" alt="">
+                    <div class="text">ICD-10 Disease Searcher</div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img th:src="@{/images/xxx.jpg}" alt="">
-                    <div class="text">Someone name</div>
+                    <img th:src="@{/images/restaurant_sales.PNG}" alt="">
+                    <div class="text">Restaurant Sales System</div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img th:src="@{/images/xxx.jpg}" alt="">
-                    <div class="text">Someone name</div>
+                    <img th:src="@{/images/menager_support.PNG}" alt="">
+                    <div class="text">Restaurant Manager Support</div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img th:src="@{/images/xxx.jpg}" alt="">
-                    <div class="text">Someone name</div>
+                    <img th:src="@{/images/sudoku.PNG}" alt="">
+                    <div class="text">Sudoku Game - C#</div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <img th:src="@{/images/xxx.jpg}" alt="">
-                    <div class="text">Someone name</div>
+                    <img th:src="@{/images/engLearn.PNG}" alt="">
+                    <div class="text">English Teacher - C#</div>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
@@ -235,20 +236,20 @@
             </div>
             <div class="column right">
                 <div class="text">Message me</div>
-                <form action="#">
+                <form action="/send_message" method="post">
                     <div class="field">
                         <div class="field name">
-                            <input type="text" placeholder="Name">
+                            <input type="text" name="name" placeholder="Name">
                         </div>
                         <div class="field email">
-                            <input type="email" placeholder="Email">
+                            <input type="email" name="email" placeholder="Email">
                         </div>
                     </div>
                     <div class="field">
-                        <input type="text" placeholder="Subject">
+                        <input type="text" name="subject" placeholder="Subject">
                     </div>
                     <div class="field textarea">
-                        <textarea cols="30" rows="10" placeholder="Describe project..."></textarea>
+                        <textarea cols="30" rows="10" name="text" placeholder="Describe project..."></textarea>
                     </div>
                     <div class="button">
                         <button type="submit">Sent message</button>

@@ -22,8 +22,8 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active");
     });
 
-    var typed = new Typed(".typing", {
-        strings: ["Developer", "Programer", "Manager", "Freelancer"],
+    let typed = new Typed(".typing", {
+        strings: ["Developerem", "Programistą", "Menadżerem", "Freelancerem"],
         typeSpeed: 100,
         backSpeed: 80,
         loop: true
