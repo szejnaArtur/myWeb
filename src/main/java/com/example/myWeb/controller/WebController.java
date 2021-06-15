@@ -14,8 +14,8 @@ public class WebController {
     private final SignUpMailer mailer;
 
     @Autowired
-    public WebController(SignUpMailer mailer){
-        this.mailer =mailer;
+    public WebController(SignUpMailer mailer) {
+        this.mailer = mailer;
     }
 
     @GetMapping("/home")
@@ -27,12 +27,12 @@ public class WebController {
     @PostMapping("/send_message")
     public ModelAndView sendMessage(ModelAndView modelAndView, @RequestParam("name") String name,
                                     @RequestParam("email") String email, @RequestParam("subject") String subject,
-                                    @RequestParam("text") String text){
+                                    @RequestParam("text") String text) {
 
         String message = "Od: " + name + "\nEmail: " + email + "\n\n" + text;
 
 //        Thread thread = new Thread(()->
-                mailer.sendMessage("arturtest69@gmail.com", subject, message);
+        mailer.sendMessage("arturtest69@gmail.com", subject, message);
 //        thread.start();
 
         modelAndView.setViewName("home");

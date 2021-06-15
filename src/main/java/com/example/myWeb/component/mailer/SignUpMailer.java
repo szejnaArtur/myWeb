@@ -15,7 +15,7 @@ public class SignUpMailer {
         this.emailSender = emailSender;
     }
 
-    public void sendMessage(String to, String subject, String text){
+    public void sendMessage(String to, String subject, String text) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(to);
         message.setSubject(subject);
