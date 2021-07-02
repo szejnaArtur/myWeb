@@ -7,6 +7,11 @@
     text-decoration: none;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -293,11 +298,12 @@ select {
 .services .title::after,
 .projects .title::after {
     background: #111111;
-    content: "what i provide";
+    content: "co zapewniam";
 }
 
 .services .serv-content .card {
     width: calc(33% - 20px);
+    height: 400px;
     background: #222222;
     text-align: center;
     border-radius: 6px;
@@ -311,6 +317,10 @@ select {
 
 .services .serv-content .card .box {
     transition: all 0.5s ease;
+}
+
+.services .serv-content .card .box p{
+    margin-bottom: 15px;
 }
 
 .services .serv-content .card:hover .box {
@@ -335,7 +345,7 @@ select {
 
 /*  SKILLS  */
 .skills .title::after {
-    content: "what i know";
+    content: "co wiem";
 }
 
 .skills .skills-content .column {
@@ -424,7 +434,7 @@ select {
 
 /*  TEAMS  */
 .projects .title::after {
-    content: "who with me";
+    content: "co zrobiłem";
 }
 
 .projects .carousel .card {
@@ -611,6 +621,12 @@ select {
     .home .max-width {
         margin-left: 0;
     }
+
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+        height: 100%;
+    }
 }
 
 @media (max-width: 1104px) {
@@ -683,11 +699,6 @@ select {
 
     .about .about-content .right {
         flex: 100%;
-    }
-
-    .services .serv-content .card {
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
     }
 
     .skills .skills-content .column,

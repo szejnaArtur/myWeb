@@ -58,14 +58,16 @@
             </div>
             <div class="column right">
                 <div class="text">Jestem Artur i jestem <span>Junior Java Developerem</span></div>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                <p>Programowanie od wielu lat jest moim hobby dlatego z wielkim zaangażowaniem podchodzę do nowych projektów oraz wyzwań.
+                    Doświadczenie w pracy z klientami oraz zarządzanie zaspołem nauczyło mnie umiejętności skutecznego rozwiązywania problemów
+                    oraz dzielenia się pozytywną jak i konstruktywną opinią.
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                     leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
                     with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <a th:href="@{/download/artur_szejna_ENG.pdf}" download="artur_szejna_ENG.pdf">Download CV - PL</a>
-                <a href="#">Download CV - ENG</a>
+                <a th:href="@{/download/cv_en_Artur_Szejna.pdf}" download="artur_szejna_ENG.pdf">Download CV - ENG</a>
+                <a th:href="@{/download/cv_pl_Artur_Szejna.pdf}" download="artur_szejna_PL.pdf">Download CV - PL</a>
             </div>
         </div>
     </div>
@@ -73,33 +75,31 @@
 
 <section class="services" id="services">
     <div class="max-width">
-        <h2 class="title">My Services</h2>
+        <h2 class="title">Moje usługi</h2>
         <div class="serv-content">
             <div class="card">
                 <div class="box">
                     <i class="fas fa-paint-brush"></i>
-                    <div class="text">Web Design</div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scram</p>
+                    <div class="text">Tworzenie aplikacji internetowych</div>
+                    <p>Aplikacja internetowa to rozwiązanie, które istnieje pomiędzy witryną internetową a standardową aplikacją w systemie operacyjnym.
+                    Oznacza to między innymi, że interakcja z użytkownikiem jest najczęściej możliwa przy użyciu standardowej przeglądarki internetowej.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <i class="fas fa-chart-line"></i>
-                    <div class="text">Advertising</div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scram</p>
+                    <div class="text">Aplikacje backendowe</div>
+                    <p>Jednym z nowoczesnych podejść do tworzenia aplikacji webowych jest rozdzielenie jej na część backendową i frontendową,
+                        które działają osobno i komunikują się ze sobą za pomocą protokołu HTTP.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
                     <i class="fas fa-code"></i>
-                    <div class="text">Apps Design</div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scram</p>
+                    <div class="text">Aplikacje desktopowe</div>
+                    <p>Aplikacja desktopowa to program komputerowy, który tworzony jest dla konkretnego systemu operacyjnego,
+                        a korzystanie z niego wymaga instalacji na danym sprzęcie. Chociaż aplikacje desktopowe mogą się wydawać przestarzałe,
+                        to sprawdzą się wówczas, gdy zależy nam na wysokim stopniu bezpieczeństwa</p>
                 </div>
             </div>
         </div>
@@ -108,10 +108,10 @@
 
 <section class="skills" id="skills">
     <div class="max-width">
-        <h2 class="title">My skills</h2>
+        <h2 class="title">Moje umiejętności</h2>
         <div class="skills-content">
             <div class="column left">
-                <div class="text">My creative skills & expriences.</div>
+                <div class="text">Moje doświadczenie i umiejętności</div>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scram</p>
@@ -160,43 +160,53 @@
 
 <section class="projects" id="projects">
     <div class="max-width">
-        <h2 class="title">My projects</h2>
+        <h2 class="title">Moje projekty</h2>
         <div class="carousel owl-carousel">
-            <div class="card">
-                <div class="box">
-                    <img th:src="@{/images/ICD10.PNG}" alt="">
-                    <div class="text">ICD-10 Disease Searcher</div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <a href="#home">
+                <div class="card">
+                    <div class="box">
+                        <img th:src="@{/images/ICD10.PNG}" alt="">
+                        <div class="text">ICD-10 Disease Searcher</div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <img th:src="@{/images/restaurant_sales.PNG}" alt="">
-                    <div class="text">Restaurant Sales System</div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </a>
+            <a href="#home">
+                <div class="card">
+                    <div class="box">
+                        <img th:src="@{/images/restaurant_sales.PNG}" alt="">
+                        <div class="text">Restaurant Sales System</div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <img th:src="@{/images/menager_support.PNG}" alt="">
-                    <div class="text">Restaurant Manager Support</div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </a>
+            <a href="#home">
+                <div class="card">
+                    <div class="box">
+                        <img th:src="@{/images/menager_support.PNG}" alt="">
+                        <div class="text">Restaurant Manager Support</div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <img th:src="@{/images/sudoku.PNG}" alt="">
-                    <div class="text">Sudoku Game - C#</div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </a>
+            <a href="#home">
+                <div class="card">
+                    <div class="box">
+                        <img th:src="@{/images/sudoku.PNG}" alt="">
+                        <div class="text">Sudoku Game - C#</div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="box">
-                    <img th:src="@{/images/engLearn.PNG}" alt="">
-                    <div class="text">English Teacher - C#</div>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </a>
+            <a href="#home">
+                <div class="card">
+                    <div class="box">
+                        <img th:src="@{/images/engLearn.PNG}" alt="">
+                        <div class="text">English Teacher - C#</div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </section>
