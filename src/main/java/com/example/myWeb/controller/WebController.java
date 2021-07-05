@@ -18,9 +18,21 @@ public class WebController {
         this.mailer = mailer;
     }
 
+    @GetMapping("/")
+    public ModelAndView main(ModelAndView modelAndView) {
+        modelAndView.setViewName("home");
+        return modelAndView;
+    }
+
     @GetMapping("/home")
     public ModelAndView userPanel(ModelAndView modelAndView) {
         modelAndView.setViewName("home");
+        return modelAndView;
+    }
+
+    @GetMapping("/skill")
+    public ModelAndView skillPanel(ModelAndView modelAndView) {
+        modelAndView.setViewName("skill");
         return modelAndView;
     }
 
@@ -28,13 +40,8 @@ public class WebController {
     public ModelAndView sendMessage(ModelAndView modelAndView, @RequestParam("name") String name,
                                     @RequestParam("email") String email, @RequestParam("subject") String subject,
                                     @RequestParam("text") String text) {
-
         String message = "Od: " + name + "\nEmail: " + email + "\n\n" + text;
-
-//        Thread thread = new Thread(()->
         mailer.sendMessage("arturtest69@gmail.com", subject, message);
-//        thread.start();
-
         modelAndView.setViewName("home");
 
         return modelAndView;
