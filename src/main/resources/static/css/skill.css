@@ -19,7 +19,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-.title{
+.title {
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -62,20 +62,20 @@
     border: var(--main-color) solid 2px;
 }
 
-.text p{
+.text p {
     background: var(--second-background);
     font-size: 20px;
     margin-bottom: 20px;
 }
 
-.text ul li{
+.text ul li {
     background: var(--second-background);
     font-size: 17px;
     margin-bottom: 5px;
     margin-left: 30px;
 }
 
-.text ul{
+.text ul {
     background: var(--second-background);
     list-style-type: circle;
     margin-bottom: 20px;
